@@ -5,7 +5,7 @@ public class Cinemar {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Este es el proyecto Cinemar"); 
-		
+	
 
 	}
 
