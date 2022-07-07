@@ -3,37 +3,50 @@ package Peliculas;
 public class Butacas {
 
 	
-	private int fila;
-	private int columna;
-	
+	private int Fila;
+	private int Columna;
+	private boolean Disponible;
 
-	public Butacas(int fila, int columna) {
-		this.fila = fila;
-		this.columna = columna;
+
+
+	public Butacas(int fila, int columna, boolean disponible) {
+		this.Fila = fila;
+		this.Columna = columna;
+		this.Disponible = disponible;
+	}
+
+	public boolean isDiponible() {
+		return Disponible;
+	}
+
+
+
+	public void setDiponible(boolean diponible) {
+		this.Disponible = diponible;
 	}
 
 
 
 	public int getFila() {
-		return fila;
+		return Fila;
 	}
 
 
 
 	public void setFila(int fila) {
-		this.fila = fila;
+		this.Fila = fila;
 	}
 
 
 
 	public int getColumna() {
-		return columna;
+		return Columna;
 	}
 
 
 
 	public void setColumna(int columna) {
-		this.columna = columna;
+		this.Columna = columna;
 	}
 	
 	public boolean Butacas () {

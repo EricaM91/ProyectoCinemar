@@ -2,70 +2,70 @@ package Peliculas;
 
 public class Pelicula {
 	
-	private String nombre;
-	private String genero;
-	private int duracion;
-	private String descripcion;
-	private String idioma;
+	private String Nombre;
+	private String Genero;
+	private int Duracion;
+	private String Descripcion;
+	private String Idioma;
 	
 	
 	public Pelicula(String nombre, String genero, int duracion, String descripcion, String idioma) {
 
-		this.nombre = nombre;
-		this.genero = genero;
-		this.duracion = duracion;
-		this.descripcion = descripcion;
-		this.idioma = idioma;
+		this.Nombre = nombre;
+		this.Genero = genero;
+		this.Duracion = duracion;
+		this.Descripcion = descripcion;
+		this.Idioma = idioma;
 	}
 
 
 	public String getNombre() {
-		return nombre;
+		return Nombre;
 	}
 
 
 	public void setNombre(String nombre) {
-		this.nombre = nombre;
+		this.Nombre = nombre;
 	}
 
 
 	public String getGenero() {
-		return genero;
+		return Genero;
 	}
 
 
 	public void setGenero(String genero) {
-		this.genero = genero;
+		this.Genero = genero;
 	}
 
 
 	public int getDuracion() {
-		return duracion;
+		return Duracion;
 	}
 
 
 	public void setDuracion(int duracion) {
-		this.duracion = duracion;
+		this.Duracion = duracion;
 	}
 
 
 	public String getDescripcion() {
-		return descripcion;
+		return Descripcion;
 	}
 
 
 	public void setDescripcion(String descripcion) {
-		this.descripcion = descripcion;
+		this.Descripcion = descripcion;
 	}
 
 
 	public String getIdioma() {
-		return idioma;
+		return Idioma;
 	}
 
 
 	public void setIdioma(String idioma) {
-		this.idioma = idioma;
+		this.Idioma = idioma;
 	}
 	
 	

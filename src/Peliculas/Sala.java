@@ -1,41 +1,52 @@
 package Peliculas;
 
-public class Sala extends Butacas {
+import java.util.ArrayList;
 
-	private int sala;
-	private String tipo;
+public class Sala{
+
+	private int SalaNumber;
+	private String Tipo;
+	private ArrayList<Butacas> ListaButacas ;
 	
 	
-	
-	public Sala(int fila, int columna, int sala, String tipo) {
-		super(fila, columna);
-		this.sala = sala;
-		this.tipo = tipo;
+	public Sala(int salaNumber, String tipo, ArrayList<Butacas> listaButacas ) {
+		this.ListaButacas = listaButacas;
+		this.SalaNumber = salaNumber;
+		this.Tipo = tipo;
 	}
 
 
 
 	public int getSala() {
-		return sala;
+		return SalaNumber;
 	}
 
 
 
 	public void setSala(int sala) {
-		this.sala = sala;
+		this.SalaNumber = sala;
 	}
 
 
 
 	public String getTipo() {
-		return tipo;
+		return Tipo;
 	}
 
 
 
 	public void setTipo(String tipo) {
-		this.tipo = tipo;
+		this.Tipo = tipo;
 	}
+
+	public ArrayList<Butacas> getListaButacas() {
+		return ListaButacas;
+	}
+
+	public void setListaButacas(ArrayList<Butacas> listaButacas) {
+		ListaButacas = listaButacas;
+	}
+
 
 	public void mostrar () {
 		System.out.println("");
