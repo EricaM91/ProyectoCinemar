@@ -20,12 +20,12 @@ public Usuario obtenerUsuario (Usuario usuario) {
 //			
 //		 con = MySQLconexion.getConexion();
 //		 
-//		 String sql =  "select*from usuario  where email =? and clave =?";
+//		 String sql =  "select*from usuario  where Email =? and Password =?";
 //		 
 //		 pst = con.prepareStatement(sql);
 //		 
 //		 pst.setString(1,usuario.getEmail());
-//		 pst.setString(2, usuario.getClave());
+//		 pst.setString(2, usuario.getPassword());
 //		 
 //		 rs = pst.executeQuery();
 //		 

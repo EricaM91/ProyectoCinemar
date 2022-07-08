@@ -19,22 +19,25 @@ import Peliculas.Sala;
 		Scanner leer = new Scanner(System.in);
 		
 		System.out.println("###### BIENVENIDOS A CINEMAR ######");
-		System.out.println("1. Inicia sesion");
-		System.out.println("2. Registrarse");
-		System.out.println("0. Salir");
-		System.out.println("Selecciona una opcion");
+		System.out.println("ELIGE UNA OPCION");
+		System.out.println("\n");
+		System.out.println("1. INICIAR SESION");
+		System.out.println("2. REGISTRARSE");
+		System.out.println("3. CREAR UNA RESERVA");
+		System.out.println("4. MODIFICAR UNA RESERVA");
+		System.out.println("5. OBSERVAR MIS RESERVAS");
+		System.out.println("6. VER HISTORIAL DE MIS ENTRADAS");
+		System.out.println("0. SALIR");
+		
 		
 		/*String email;
-		String clave;
-		
 		System.out.println("Ingrese un email");
-		
 		email = leer.nextLine();
 		
+		String password;
+		System.out.println("Ingrese el password");
+		password = leer.nextLine();*/
 		
-		System.out.println("Ingrese la clave");
-		
-		clave = leer.nextLine();*/
 		
 		
 		
@@ -69,24 +72,27 @@ import Peliculas.Sala;
 		listaButacas.add(oneButacas);
 		Butacas twoButacas = new Butacas(1,2,false);
 		listaButacas.add(twoButacas);
-		Butacas threeButacas = new Butacas(1,3,false);
+		Butacas threeButacas = new Butacas(1,3,true);
 		listaButacas.add(threeButacas);
-		Butacas fourButacas = new Butacas(1,4,false);
+		Butacas fourButacas = new Butacas(1,4,true);
 		listaButacas.add(fourButacas);
-		Butacas fiveButacas = new Butacas(1,5,false);
+		Butacas fiveButacas = new Butacas(1,5,true);
 		listaButacas.add(fiveButacas);
 		Butacas sixButacas = new Butacas(1,6,false);
 		listaButacas.add(sixButacas);
 		Butacas sevenButacas = new Butacas(1,7,false);
 		listaButacas.add(sevenButacas);
-		Butacas eightButacas = new Butacas(1,8,false);
+		Butacas eightButacas = new Butacas(1,8,true);
 		listaButacas.add(eightButacas);
-		Butacas nineButacas = new Butacas(1,9,false);
+		Butacas nineButacas = new Butacas(1,9,true);
 		listaButacas.add(nineButacas);
-		Butacas tenButacas = new Butacas(1,10,false);
+		Butacas tenButacas = new Butacas(1,10,true);
 		listaButacas.add(tenButacas);
+		//Agregar ciclo?
 		
-		//CREAR MAS BUTACAS Y AGREGARLA A LA LISTA
+		//Salas
+		
+		
 	    Sala sala1 = new Sala(1, "2D", listaButacas );
 	    Sala sala2 = new Sala(2, "3D", listaButacas ); 
 	    Sala sala3 = new Sala(3, "2D", listaButacas );
@@ -99,17 +105,30 @@ import Peliculas.Sala;
 	    Sala sala10 = new Sala(10, "3D", listaButacas );
 
 
+	    sala1.mostrar();
+	    sala2.mostrar();
+	    sala3.mostrar();
+	    sala4.mostrar();
+	    sala5.mostrar();
+	    sala6.mostrar();
+	    sala7.mostrar();
+	    sala8.mostrar();
+	    sala9.mostrar();
+	    sala10.mostrar();
 	    
-	  
+
+	    Scanner lectura = new Scanner(System.in);
 	    
-	    System.out.print("#####################   MENU CINEMAR #####################");
-	    System.out.print("#####################   SELECCIONE LA OPCION  ######################");
-	    System.out.print("1-VER TODAS LAS RESERVAS");
-	    System.out.print("2-VER UN CLIENTE EN PARTICULAR");
-	    System.out.print("3-CREAR UNA SALA CON UNA PELICULA");
-	    System.out.print("4-MODIFICAR LA SALA");
-	    System.out.print("5-ELIMINAR LA SALA");
-	    System.out.print("6-MODIFICAR DESCUENTOS");
+	    System.out.println("\n#####################   MENU CINEMAR PARA LA ADMINISTRACION   #####################\n");
+	    System.out.println("#####################   SELECCIONE UNA OPCION   ######################");
+	    System.out.println("\n");
+	    System.out.println("1-VER TODAS LAS RESERVAS");
+	    System.out.println("2-VER UN CLIENTE EN PARTICULAR");
+	    System.out.println("3-CREAR SALA CON UNA PELICULA");
+	    System.out.println("4-MODIFICAR LA SALA");
+	    System.out.println("5-ELIMINAR LA SALA");
+	    System.out.println("6-MODIFICAR DESCUENTOS");
+	    
 	    
 
 	

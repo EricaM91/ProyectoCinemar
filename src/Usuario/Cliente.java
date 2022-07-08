@@ -5,21 +5,21 @@ public class Cliente {
 	 private String Nombre;
 	 private String Apellido;
 	 private String Email;
-	 private String Contraseña;
-	 private String ConfirmarContraseña;
+	 private String Password;
+	 private String ConfirmarPassword;
 	 private int FechaNacimiento;
 	 private int Celular;
 
 
 
-	public Cliente(String nombre, String apellido, String email, String contraseña, String confirmarcontraseña,
+	public Cliente(String nombre, String apellido, String email, String password, String confirmarPassword,
 			int fechaNacimiento, int celular) {
 
 		this.Nombre = nombre;
 		this.Apellido = apellido;
 		this.Email = email;
-		this.Contraseña = contraseña;
-		this.ConfirmarContraseña = confirmarcontraseña;
+		this.Password = password;
+		this.ConfirmarPassword = confirmarPassword;
 		this.FechaNacimiento = fechaNacimiento;
 		this.Celular = celular;
 		
@@ -56,23 +56,21 @@ public class Cliente {
 	}
 
 
-	public String getContraseña() {
-		return Contraseña;
+	public String getPassword() {
+		return Password;
 	}
 
 
-	public void setContraseña(String contraseña) {
-		this.Contraseña = contraseña;
+	public void setPassword(String password) {
+		this.Password = password;
+	}
+	public String getConfirmarPassword() {
+		return ConfirmarPassword;
 	}
 
 
-	public String getConfirmarcontraseña() {
-		return ConfirmarContraseña;
-	}
-
-
-	public void setConfirmarcontraseña(String confirmarcontraseña) {
-		this.ConfirmarContraseña = confirmarcontraseña;
+	public void setConfirmarPassword(String confirmarPassword) {
+		ConfirmarPassword = confirmarPassword;
 	}
 
 
@@ -99,8 +97,8 @@ public class Cliente {
 	System.out.println("nombre"+ this.Nombre);
 	System.out.println("apellido"+ this.Apellido);
 	System.out.println("email"+ this.Email);
-	System.out.println("contraseña"+ this.Contraseña);
-	System.out.println("confirmarContraseña"+ this.ConfirmarContraseña);
+	System.out.println("password"+ this.Password);
+	System.out.println("confirmarPassword"+ this.ConfirmarPassword);
 	System.out.println("fechaNacimiento"+ this.FechaNacimiento);
 	System.out.println("celular"+ this.Celular);
 	

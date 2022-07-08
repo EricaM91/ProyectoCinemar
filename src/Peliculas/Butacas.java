@@ -49,8 +49,22 @@ public class Butacas {
 		this.Columna = columna;
 	}
 	
-	public boolean Butacas () {
-		return false;
-	}
-	
+	/*public boolean VerificarButaca(int seleccionFila, int seleccionColumna) {
+		int O  = Ocupado;
+		boolean verificar = seleccionFila > Fila || 
+				             seleccionColumna > Columna ||
+				             seleccionFila == O   || seleccionColumna == O;
+	    if (verificar) {
+	    	
+	    }
+	    else if () {
+	    	
+	    }
+	    
+	    
+				             
+		
+		return true;
+	*/
+	 
 }

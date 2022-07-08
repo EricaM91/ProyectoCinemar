@@ -11,8 +11,8 @@ public class Registro {
 	String Nombre;
 	String Apellido;
 	String Email;
-    String Contraseña;
-    String ConfirmarContraseña;
+    String Password;
+    String ConfirmarPassword;
     int FechaNacimiento;
     int Celular;
 
@@ -27,11 +27,11 @@ public class Registro {
 	System.out.println("Ingrese email *: ");
 	Email = leerScanner.nextLine();
 	
-	System.out.println("Ingrese contraseña *: ");
-	Contraseña = leerScanner.nextLine();
+	System.out.println("Ingrese password *: ");
+	Password = leerScanner.nextLine();
 	
-	System.out.println("Ingrese confirmarcontraseña *: ");
-	ConfirmarContraseña = leerScanner.nextLine();
+	System.out.println("Confirmar password *: ");
+	ConfirmarPassword = leerScanner.nextLine();
 	
 	System.out.println("Ingrese fechaNacimiento *: ");
 	FechaNacimiento = leerScanner.nextInt();

@@ -13,9 +13,9 @@ public class MySQLconexion {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url = "jdbc:mysql://localhost/cinemar";
 			String usuario = "erica";
-			String contraseña = "erica14";
+			String password = "erica14";
 			
-			con = DriverManager.getConnection(url,usuario,contraseña); 
+			con = DriverManager.getConnection(url,usuario, password); 
 			
 		} catch (ClassNotFoundException e) {
 			System.out.println("Error al cargar el Driver");

@@ -3,13 +3,13 @@ package Usuario;
 public class Usuario {
 	
 	private String Email;
-	private String Clave;
+	private String Password;
 	
 	
 	public Usuario(String email, String clave) {
 	
 		this.Email = email;
-		this.Clave = clave;
+		this.Password = clave;
 	}
 	
 
@@ -31,12 +31,12 @@ public class Usuario {
 
 
 	public String getClave() {
-		return Clave;
+		return Password;
 	}
 
 
 	public void setClave(String clave) {
-		this.Clave = clave;
+		this.Password = clave;
 	}
 
 

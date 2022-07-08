@@ -49,8 +49,11 @@ public class Sala{
 
 
 	public void mostrar () {
-		System.out.println("");
-		System.out.println("");
+		System.out.println("\nSala de cine");
+		System.out.println("Tipo");
+		System.out.println("Lista de butacas\n");
+
+
 		
 	}
 	
