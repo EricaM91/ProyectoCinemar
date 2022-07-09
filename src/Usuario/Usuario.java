@@ -6,10 +6,10 @@ public class Usuario {
 	private String Password;
 	
 	
-	public Usuario(String email, String clave) {
+	public Usuario(String email, String password) {
 	
 		this.Email = email;
-		this.Password = clave;
+		this.Password = password;
 	}
 	
 
@@ -27,16 +27,15 @@ public class Usuario {
 
 	public void setEmail(String email) {
 		this.Email = email;
+
 	}
-
-
-	public String getClave() {
+	public String getPassword() {
 		return Password;
 	}
 
 
-	public void setClave(String clave) {
-		this.Password = clave;
+	public void setPassword(String password) {
+		this.Password = password;
 	}
 
 
@@ -44,7 +43,9 @@ public class Usuario {
 		System.out.println("");	
 	}
 	
+	public String Insertar() {
+		return "insert into usuario values ('"+this.Email+"','"+this.Password+"');";
+	}
 	
-
 
 }

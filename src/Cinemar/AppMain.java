@@ -6,7 +6,9 @@ import java.util.Scanner;
 import Peliculas.Butacas;
 import Peliculas.Pelicula;
 import Peliculas.Sala;
+import Usuario.Cliente;
 import Usuario.Usuario;
+import Usuario.UsuarioBD;
 
 
    public class AppMain {
@@ -120,9 +122,10 @@ import Usuario.Usuario;
 //	    System.out.println("6-MODIFICAR DESCUENTOS");
 //	    
 	   int option  = MenuClient();
+	   Scanner leerScanner=new Scanner(System.in);
+	   UsuarioBD usuarioDb= new UsuarioBD();
 	   switch (option) {
 	   case 1:
-		   Scanner leerScanner=new Scanner(System.in);
 			System.out.println("Cinemar");
 			System.out.println("Iniciar sesion");
 			
@@ -135,11 +138,51 @@ import Usuario.Usuario;
 			
 			System.out.println();
 			Usuario usuario = new Usuario(email, password);
+			boolean tieneAcceso = usuarioDb.IniciarSesion(usuario);
+			if(tieneAcceso == true ) 
+			{
+				System.out.println("Bienvenido a Cinemar");
+			}else 
+			{
+				System.out.println("El email o password son incorrectos");
+			}
 			
-			//Usuario u = login.loguearme();
 	     break;
 	   case 2:
-	     System.out.println("Tuesday");
+		   
+			System.out.println("Ingrese nombre *: ");
+            String  nombre = leerScanner.nextLine();
+			
+			System.out.println("Ingrese apellido *: ");
+			String apellido = leerScanner.nextLine();
+			
+			System.out.println("Ingrese email *: ");
+			String emailCliente = leerScanner.nextLine();
+			
+			System.out.println("Ingrese password *: ");
+			String passwordCliente = leerScanner.nextLine();
+			
+			System.out.println("Confirmar password *: ");
+			String confirmarPassword = leerScanner.nextLine();
+			
+			System.out.println("Ingrese fechaNacimiento *: ");
+			String fechaNacimiento = leerScanner.nextLine();
+			
+			System.out.println("Ingrese celular *: ");
+			String celular = leerScanner.nextLine();
+			
+			Cliente cliente = new Cliente(nombre, apellido, emailCliente, passwordCliente, confirmarPassword, fechaNacimiento, celular);
+			boolean registrado = usuarioDb.Registrarse(cliente);
+			if(registrado == true)
+			{
+				System.out.println("Usted ya es cliente de Cinemar...");
+				cliente.Mostrar();
+			}else
+			{
+				System.out.println("Hubo un problema con el registro!!!!!!!!!!!!");
+				
+			}
+
 	     break;
 	   case 3:
 	     System.out.println("Wednesday");

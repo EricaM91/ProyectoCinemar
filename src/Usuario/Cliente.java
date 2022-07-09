@@ -7,13 +7,12 @@ public class Cliente {
 	 private String Email;
 	 private String Password;
 	 private String ConfirmarPassword;
-	 private int FechaNacimiento;
-	 private int Celular;
+	 private String FechaNacimiento;
+	 private String Celular;
 
 
 
-	public Cliente(String nombre, String apellido, String email, String password, String confirmarPassword,
-			int fechaNacimiento, int celular) {
+	public Cliente(String nombre, String apellido, String email, String password, String confirmarPassword, String fechaNacimiento, String celular) {
 
 		this.Nombre = nombre;
 		this.Apellido = apellido;
@@ -74,21 +73,21 @@ public class Cliente {
 	}
 
 
-	public int getFechaNacimiento() {
+	public String getFechaNacimiento() {
 		return FechaNacimiento;
 	}
 
 
-	public void setFechaNacimiento(int fechaNacimiento) {
+	public void setFechaNacimiento(String fechaNacimiento) {
 		this.FechaNacimiento = fechaNacimiento;
 	}
 
-	public int getCelular() {
+	public String getCelular() {
 		return Celular;
 	}
 
 
-	public void setCelular(int celular) {
+	public void setCelular(String celular) {
 		this.Celular = celular;
 	}
 
@@ -110,6 +109,9 @@ public class Cliente {
 		
 	}
 
+	public String Insertar() {
+		return "insert into cliente (Nombre, Apellido, Email,Password,ConfirmarPassword,FechaNacimiento,Celular) values ('"+this.Nombre+"','"+this.Apellido+"','"+this.Email+"','"+this.Password+"','"+this.ConfirmarPassword+"','"+this.FechaNacimiento+"', '"+this.Celular+"');";
+	}
 	
 
 }
