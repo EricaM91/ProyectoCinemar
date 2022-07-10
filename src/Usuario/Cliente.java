@@ -25,6 +25,11 @@ public class Cliente {
 	}
 
 
+	public Cliente() {
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public String getNombre() {
 		return Nombre;
 	}
@@ -92,14 +97,14 @@ public class Cliente {
 	}
 
 	
-	public void Mostrar () {
-	System.out.println("nombre"+ this.Nombre);
-	System.out.println("apellido"+ this.Apellido);
-	System.out.println("email"+ this.Email);
-	System.out.println("password"+ this.Password);
-	System.out.println("confirmarPassword"+ this.ConfirmarPassword);
-	System.out.println("fechaNacimiento"+ this.FechaNacimiento);
-	System.out.println("celular"+ this.Celular);
+	public void MostrarCliente () {
+	System.out.println("Nombre: "+ this.Nombre);
+	System.out.println("Apellido: "+ this.Apellido);
+	System.out.println("Email: "+ this.Email);
+	System.out.println("Password: "+ this.Password);
+	System.out.println("Confirmacion de Password: "+ this.ConfirmarPassword);
+	System.out.println("Fecha Nacimiento: "+ this.FechaNacimiento);
+	System.out.println("Celular: "+ this.Celular);
 	
 	
 	}
@@ -113,5 +118,6 @@ public class Cliente {
 		return "insert into cliente (Nombre, Apellido, Email,Password,ConfirmarPassword,FechaNacimiento,Celular) values ('"+this.Nombre+"','"+this.Apellido+"','"+this.Email+"','"+this.Password+"','"+this.ConfirmarPassword+"','"+this.FechaNacimiento+"', '"+this.Celular+"');";
 	}
 	
+
 
 }

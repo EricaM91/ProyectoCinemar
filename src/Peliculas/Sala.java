@@ -6,13 +6,14 @@ public class Sala{
 
 	private int SalaNumber;
 	private String Tipo;
-	private ArrayList<Butacas> ListaButacas ;
+	private int IdSala;
 	
-	
-	public Sala(int salaNumber, String tipo, ArrayList<Butacas> listaButacas ) {
-		this.ListaButacas = listaButacas;
-		this.SalaNumber = salaNumber;
-		this.Tipo = tipo;
+
+
+	public Sala(int salaNumber, String tipo, int idSala) {
+		SalaNumber = salaNumber;
+		Tipo = tipo;
+		IdSala = idSala;
 	}
 
 
@@ -39,22 +40,40 @@ public class Sala{
 		this.Tipo = tipo;
 	}
 
-	public ArrayList<Butacas> getListaButacas() {
-		return ListaButacas;
+	public int getSalaNumber() {
+		return SalaNumber;
 	}
 
-	public void setListaButacas(ArrayList<Butacas> listaButacas) {
-		ListaButacas = listaButacas;
+
+
+	public void setSalaNumber(int salaNumber) {
+		SalaNumber = salaNumber;
 	}
+
+
+
+	public int getIdSala() {
+		return IdSala;
+	}
+
+
+
+	public void setIdSala(int idSala) {
+		IdSala = idSala;
+	}
+
 
 
 	public void mostrar () {
 		System.out.println("\nSala de cine");
 		System.out.println("Tipo");
 		System.out.println("Lista de butacas\n");
-
-
 		
 	}
+	public String Insertar() 
+	{
+		return "insert into sala values ('"+this.SalaNumber+"','"+this.Tipo+"','"+this.IdSala+"');";
+	}
+	
 	
 }

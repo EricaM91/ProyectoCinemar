@@ -1,15 +1,13 @@
 package Peliculas;
 
-public class Proyeccion extends Pelicula {
+public class Proyeccion{
 	
 	private String FechaIni;
 	private String FechaFin;
 	private String Horario;
 	
 	
-	public Proyeccion(String nombre, String genero, int duracion, String descripcion, String idioma, String fechaIni,
-			String fechaFin, String horario) {
-		super(nombre, genero, duracion, descripcion, idioma);
+	public Proyeccion(String fechaIni,String fechaFin, String horario) {
 		
 		this.FechaIni = fechaIni;
 		this.FechaFin = fechaFin;
